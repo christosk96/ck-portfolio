@@ -1,0 +1,174 @@
+/////////// SECTION - GAPS //////////////
+.section {
+    &__gap {
+        &-home {
+            padding-top: 20rem;
+        }
+
+        &-education {
+            padding: 12.5rem 0 18.5rem;
+            margin: 20.5rem 0 0;
+        }
+
+        &-portfolio {
+            padding: 10rem 0 17.5rem;
+        }
+
+        &-contact {
+            padding: 10rem 0 13rem;
+        }
+    }
+}
+
+.footer {
+    padding: 9rem 0;
+}
+
+//////////////// MAIN CONTAINER ////////////
+/// 
+.container {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+
+    @media only screen and (max-width: $bp-largest) {
+        padding: 0 6rem;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        padding: 0;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 0 6rem;
+    }
+}
+
+//////////////// HEADER ////////////
+/// 
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+//////////////// HOME - HERO ////////////
+/// 
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $bp-small) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    &__left {
+        flex: 0 0 48%;
+        margin-right: auto;
+
+        @media only screen and (max-width: $bp-small) {
+            max-width: 50rem;
+            padding-top: 8rem;
+        }
+    }
+
+    &__right {
+        padding-right: 6rem;
+
+        @media only screen and (max-width: $bp-small) {
+            align-self: flex-start;
+            padding-right: 0;
+        }
+    }
+}
+
+
+//////////////// EDUCATION ////////////
+/// 
+
+.education {
+    &__name {
+        display: flex;
+        justify-content: center;
+
+        @media only screen and (max-width: $bp-small) {
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+
+
+    &__content {
+        display: flex;
+        padding-top: 8rem;
+
+        @media only screen and (max-width: $bp-small) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-left {
+            flex: 0 0 45%;
+            align-self: center;
+
+            @media only screen and (max-width: $bp-small) {
+                align-self: flex-start;
+            }
+        }
+
+        &-right {
+            flex: 1;
+
+            @media only screen and (max-width: $bp-small) {
+                padding-top: 2.5rem;
+            }
+        }
+    }
+}
+
+//////////////// EDUCATION ////////////
+/// 
+.portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__slide {
+        display: flex;
+        align-items: center;
+    }
+}
+
+//////////////// CONTACT ////////////
+/// 
+/// 
+
+.contact__wrapper {
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-small) {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    &-form {}
+}
+
+
+//////////////// FOOTER ////////////
+/// 
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
